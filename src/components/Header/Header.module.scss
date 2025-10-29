@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: $spacing-md;
+  background: $primary-color;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  margin: 0;
+  line-height: normal;
+}
+
+.favoritesButton {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: $font-size-md;
+  color: $background-color;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  gap: $spacing-sm;
+  &:focus {
+    outline: none;
+  }
+}
+
+.favoritesIcon {
+  width: $spacing-lg;
+}
+
+@media (min-width: $tablet) {
+  .header {
+    padding-right: $spacing-xxl;
+    padding-left: $spacing-xxl;
+  }
+}
