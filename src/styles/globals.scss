@@ -1,6 +1,6 @@
 // Global SCSS imports
-@use './variables.scss' as *;
+@forward './variables.scss';
 
-// You can add other global imports here
-// @use './mixins.scss' as *;
-// @use './functions.scss' as *;
+// You can add other global forwards here
+// @forward './mixins.scss';
+// @forward './functions.scss';
