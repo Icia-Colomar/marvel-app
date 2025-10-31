@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import marvelLogo from '../../assets/marvel-logo.svg';
-import heartIcon from '../../assets/heart-icon.svg';
+import emptyHeartIcon from '../../assets/empty-heart-icon.svg';
 
 const Header: React.FC = () => {
   const handleFavoritesClick = (): void => {
@@ -14,14 +14,18 @@ const Header: React.FC = () => {
         <h1 className={styles.logo}>
           <img src={marvelLogo} alt="Marvel Logo" />
         </h1>
-        
+
         <button
           type="button"
           onClick={handleFavoritesClick}
           aria-label="Favorites characters"
           className={styles.favoritesButton}
         >
-          <img className={styles.favoritesIcon} src={heartIcon} alt="Favorites Icon" />
+          <img
+            className={styles.favoritesIcon}
+            src={emptyHeartIcon}
+            alt="Favorites Icon"
+          />
           <span>0</span>
         </button>
       </div>

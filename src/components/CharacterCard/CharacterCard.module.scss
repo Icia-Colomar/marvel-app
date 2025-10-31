@@ -1,0 +1,41 @@
+.card {
+  max-width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardImage {
+  height: 184px;
+  object-fit: cover;
+}
+
+.favoritesIcon {
+  width: $spacing-md;
+  height: $spacing-md;
+  cursor: pointer;
+}
+
+.cardDescription {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-md;
+  padding-bottom: $spacing-lg;
+  font-size: $font-size-sm;
+  background: $primary-color;
+  color: $background-color;
+  border-top: 6px solid $secondary-color;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0 100%
+  );
+
+  span {
+    display: flex;
+  }
+}

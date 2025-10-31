@@ -1,0 +1,10 @@
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $spacing-md;
+  margin-top: calc($spacing-xxl + $spacing-xxl);
+  li {
+    cursor: pointer;
+  }
+}
